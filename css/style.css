@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Epilogue', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+/* Style générique et navigation */
+
+/* Générique */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Epilogue', sans-serif;
+}
+
+h2{
+margin-bottom: 1vh;
+text-align: center;
+}
+
+/* Navigation */
+
+.menu {
+    background-color: #363A47;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-link {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-link-li {
+    height: 100%;
+    width: 33.33vw;
+}
+
+.menu-link-li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link-li a:hover {
+    background-color: #e74c3c;
+}
+
+/* Bouton */
+.mon-bouton {
+    text-decoration: none;
+    color: white;
+    background-color: #e74c3c;
+    padding: 15px 60px;
+    margin: 1vh;
+    border-radius: 10px ;
+    box-shadow: 0 0 0 0 rgba(255, 78, 84, .7);
+    animation: 3s ease-out infinite pulsation_button;
+}
+
+@keyframes pulsation_button {from {box-shadow: 0 0 0 -3px hsla(0, 0%, 100%, 0), 0 0 0 0 rgba(255, 71, 84, .7)}
+    to {box-shadow: 0 0 0 10px hsla(0, 0%, 100%, 0), 0 0 0 13px rgba(105, 79, 79, 0)}
+}
+/* Footer */
+footer {
+    height: 100vh;
+    width: 100vw;
+    background: url(/images/macro-view-clock-mechanism.jpg) fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rotation {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: auto 3vw;
+    transform: rotate(180deg);
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 6vh;
+    color: #e74c3c;
+}
+
+.formulaire {
+    margin: auto auto;
+    height: auto;
+    width: 50vw;
+    padding: 2vh 1vw;
+    background-color: #e74c3c;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #fff;
+}
+
+.colect {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 1em;
+    padding: 1vh 0 1vh 1vw;
+    width: 48vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: white solid 1px;
+}
+
+.send {
+    border:1px solid #fff;
+    background-color: #e74c3c;
+    color: white;
+    border-radius:5px;
+    width:50%;
+    padding:20px;
+    margin: 1vh 25% 0 25%;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+.send:hover{
+    background-color: #d73b3c;
+}
