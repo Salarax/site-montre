@@ -1,0 +1,77 @@
+/* Header index*/
+.header-index {
+    height: 100vh;
+    width: 100vw;
+    background: url(/images/macro-view-clock-mechanism.jpg) fixed no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header-blank {
+    grid-area: 1/1/3/4;
+    background-color: #363A47;
+}
+
+.h1-index {
+    grid-area: 3/1/4/6;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-index-img {
+    background: url(/images/macro-view-clock-mechanism.jpg) fixed;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.biographie {
+    grid-area: 4/3/6/6;
+    padding: 5%;
+    background-color: #363A47;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Chapeau */
+
+.Chapeau {
+    width: 100vw;
+    height: auto;
+    padding: 3vh 3vw;
+}
+
+/* Produits */
+
+.article1 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.article1 article {
+    width: 50vw;
+    height: 50vh;
+    background-color: #DDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article1 img {
+    object-fit: cover;
+    width: 50vw;
+}
+
