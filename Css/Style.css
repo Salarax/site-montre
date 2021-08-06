@@ -82,16 +82,11 @@ text-align: center;
     margin: 1vh;
     border-radius: 10px ;
     box-shadow: 0 0 0 0 rgba(255, 78, 84, .7);
-    animation: pulsation_button 3s ease-out infinite;
+    animation: 3s ease-out infinite pulsation_button;
 }
 
-@keyframes pulsation_button {
-    from {
-        box-shadow: 0 0 0 -3px hsla(0, 0%, 100%, 0), 0 0 0 0 rgba(255, 71, 84, .7)
-    }
-    to {
-        box-shadow: 0 0 0 10px hsla(0, 0%, 100%, 0), 0 0 0 13px hsla(0,0,100%,0)
-    }
+@keyframes pulsation_button {from {box-shadow: 0 0 0 -3px hsla(0, 0%, 100%, 0), 0 0 0 0 rgba(255, 71, 84, .7)}
+    to {box-shadow: 0 0 0 10px hsla(0, 0%, 100%, 0), 0 0 0 13px rgba(105, 79, 79, 0)}
 }
 /* Footer */
 footer {
